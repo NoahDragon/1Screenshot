@@ -44,10 +44,13 @@ let tray = null;
 // Some APIs can only be used after this event occurs.
 app.on('ready', ()=>{
     createWindow();
-    tray = new Tray('./icon.ico');
+    tray = new Tray('./icon.png');
     const contextMenu = Menu.buildFromTemplate([
         {label: 'Item1', type: 'radio'},
-        {label: 'Item2', type: 'radio', checked: true}
+        {label: 'Item2', type: 'radio', checked: true},
+        {label: 'Quit', click: (item, window, event) => {
+            app.quit();
+        }}
     ]);
     tray.setToolTip('1Screenshot');
     tray.setContextMenu(contextMenu);
