@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
-    <link rel="stylesheet" href="./font-awesome/less/font-awesome.less" />
+    <link rel="stylesheet" type="text/less" href="./font-awesome/less/font-awesome.less" />
   </head>
   <body>
     <h1>Hello World!</h1>
@@ -12,11 +12,25 @@
     Chromium <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.
 
-    <i class="fa fa-camera-retro fa-lg"></i> fa-lg
-    <i class="fa fa-camera-retro fa-2x"></i> fa-2x
-    <i class="fa fa-camera-retro fa-3x"></i> fa-3x
-    <i class="fa fa-camera-retro fa-4x"></i> fa-4x
-    <i class="fa fa-camera-retro fa-5x"></i> fa-5x
+    <ul>
+        <li><i class="fa fa-camera-retro fa-lg"></i> fa-lg</li>
+        <li><i class="fa fa-camera-retro fa-2x"></i> fa-2x</li>
+        <li><i class="fa fa-camera-retro fa-3x"></i> fa-3x</li>
+        <li><i class="fa fa-camera-retro fa-4x"></i> fa-4x</li>
+        <li><i class="fa fa-camera-retro fa-5x"></i> fa-5x</li>
+    </ul>
+    <div id="app">
+			  <!-- my app renders here -->
+		</div>
+		<script>
+     import React from 'react';
+     import ReactDOM from 'react-dom';
+		 // My code
+		 ReactDOM.render(
+				 React.DOM.h1({id: "First H1"}, React.DOM.span(null, React.DOM.em(null,"Hello World!"), "My first Reactjs!")),
+				 document.getElementById("app")
+		 );
+		</script>
   </body>
 
   <script>
