@@ -1,21 +1,19 @@
 {
-  "name": "electron-quick-start",
+  "name": "1Screenshot",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/NoahDragon/1Screenshot",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Screenshot",
+    "Screensnap"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "Abner",
+  "license": "MIT",
   "devDependencies": {
     "electron": "^1.4.1",
     "electron-prebuilt-compile": "^1.4.15"
